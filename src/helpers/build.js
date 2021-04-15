@@ -199,7 +199,7 @@ const bundleAppRollup = (folder, metadata, type, options) => {
 
 const getEnvAppVars = (parsed = {}) =>
   Object.keys(parsed)
-    .filter(key => key.startsWith('APP_'))
+    // .filter(key => key.startsWith('APP_'))
     .reduce((env, key) => {
       env[key] = parsed[key]
       return env
