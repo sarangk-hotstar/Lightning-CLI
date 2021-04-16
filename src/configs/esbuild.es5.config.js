@@ -38,7 +38,7 @@ module.exports = (folder, globalName) => {
     return acc
   }, {})
   // for process.env.NODE_ENV
-  defined['process.env.NODE_ENV'] = process.env.NODE_ENV
+  defined['process.env.NODE_ENV'] = `"${process.env.NODE_ENV}"`
 
   return {
     plugins: [
